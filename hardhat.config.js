@@ -3,7 +3,6 @@ require("@nomiclabs/hardhat-ethers");
 require("@nomiclabs/hardhat-etherscan");
 require("@nomiclabs/hardhat-solhint");
 require("@nomiclabs/hardhat-waffle");
-require("solidity-docgen");
 require("solidity-coverage");
 require("hardhat-gas-reporter");
 require("hardhat-abi-exporter");
@@ -177,10 +176,5 @@ module.exports = {
       polygon: POLYGONSCAN_API_KEY,
       polygonMumbai: POLYGONSCAN_API_KEY,
     },
-  },
-  docgen: {
-   outputDir: "docs",
-   pages: "single", 
-   collapseNewlines: true
-  } 
+  }
 };
