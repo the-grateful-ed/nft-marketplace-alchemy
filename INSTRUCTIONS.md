@@ -28,7 +28,7 @@ npx hardhat coverage
     - See results in `coverage/index.html` file
 
 ### Prettier (+ Solidity Plugin)
-[original repo](https://github.com/prettier/prettier)
+[original repo](https://github.com/prettier/prettier)  
 [plugin repo](https://github.com/prettier-solidity/prettier-plugin-solidity)
 - Run code formatter
 ```
