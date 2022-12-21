@@ -41,7 +41,7 @@ npx prettier --write .
 ```
 npx hardhat dodoc
 ```
-    - It's configured to run on *each* contracts compilation
+- It's configured to run on *each* contracts compilation
 - See results in `docs/` directory
 
 TODO add other plugins from hardhat config
