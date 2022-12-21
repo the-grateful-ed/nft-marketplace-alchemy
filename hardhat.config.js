@@ -15,8 +15,8 @@ require("dotenv").config();
 // TODO add acc PK here
 
 // Add some .env individual variables
-const INFURA_PROJECT_ID = process.env.INFURA_PROJECT_ID;
-const ALCHEMYAPI_URL = process.env.ALCHEMYAPI_URL;
+const INFURA_API_KEY = process.env.INFURA_API_KEY;
+const ALCHEMY_API_URL = process.env.ALCHEMY_API_URL;
 const COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY;
 
 const REPORT_GAS = process.env.REPORT_GAS || "true";
@@ -30,7 +30,7 @@ const POLYGONSCAN_API_KEY = process.env.POLYGONSCAN_API_KEY || "";
 const MNEMONIC = process.env.MNEMONIC || "";
 
 // Use AlchemyAPI to make fork if its URL specifyed else use the Infura API;
-const FORKING_URL = ALCHEMYAPI_URL || `https://mainnet.infura.io/v3/${INFURA_PROJECT_ID}`;
+const FORKING_URL = ALCHEMY_API_URL || `https://mainnet.infura.io/v3/${INFURA_API_KEY}`;
 const BLOCK_NUMBER = 15073606;
 
 module.exports = {
@@ -54,7 +54,7 @@ module.exports = {
       forking: {
         url: FORKING_URL,
         // specifing blockNumber available only for AlchemyAPI
-        blockNumber: ALCHEMYAPI_URL ? BLOCK_NUMBER : undefined,
+        blockNumber: ALCHEMY_API_URL ? BLOCK_NUMBER : undefined,
       },
       accounts: {
         mnemonic: MNEMONIC,
@@ -65,28 +65,28 @@ module.exports = {
       gasMultiplier: 1.2,
     },
     mainnet: {
-      url: `https://mainnet.infura.io/v3/${INFURA_PROJECT_ID}`,
+      url: `https://mainnet.infura.io/v3/${INFURA_API_KEY}`,
       accounts: {
         mnemonic: MNEMONIC,
       },
       chainId: 1,
     },
     kovan: {
-      url: `https://kovan.infura.io/v3/${INFURA_PROJECT_ID}`,
+      url: `https://kovan.infura.io/v3/${INFURA_API_KEY}`,
       accounts: {
         mnemonic: MNEMONIC,
       },
       chainId: 42,
     },
     rinkeby: {
-      url: `https://rinkeby.infura.io/v3/${INFURA_PROJECT_ID}`,
+      url: `https://rinkeby.infura.io/v3/${INFURA_API_KEY}`,
       accounts: {
         mnemonic: MNEMONIC,
       },
       chainId: 4,
     },
     goerli: {
-      url: `https://goerli.infura.io/v3/${INFURA_PROJECT_ID}`,
+      url: `https://goerli.infura.io/v3/${INFURA_API_KEY}`,
       accounts: {
         mnemonic: MNEMONIC,
       },
