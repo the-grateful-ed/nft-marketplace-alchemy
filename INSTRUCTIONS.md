@@ -44,4 +44,38 @@ npx hardhat dodoc
 - It's configured to run on *each* contracts compilation
 - See results in `docs/` directory
 
-TODO add other plugins from hardhat config
+### Hardhat Gas Reporter
+[repo](https://github.com/cgewecke/hardhat-gas-reporter)
+- Run (automatically runs with tests)
+```
+npx hardhat test
+```
+### Hardhat Abi Exporter
+[repo](https://github.com/ItsNickBarry/hardhat-abi-exporter)
+- Run 
+```
+npx hardhat export-abi
+```
+It automatically runs on contracts compilation
+
+### Hardhat Contract Sizer
+[repo](https://github.com/ItsNickBarry/hardhat-contract-sizer)
+- Run 
+```
+npx hardhat size-contracts
+```
+It automatically runs on contracts compilation
+
+### Hardhat Tracer
+[repo](https://github.com/zemse/hardhat-tracer)
+- Run 
+```
+npx hardhat test --trace
+```
+or
+```
+npx hardhat test --fulltrace
+``` 
+
+
+### TODO add hardat deploy
