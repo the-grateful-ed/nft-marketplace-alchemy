@@ -134,12 +134,11 @@ module.exports = {
     enabled: REPORT_GAS === "true" ? true : false,
     currency: "USD",
     coinmarketcap: COINMARKETCAP_API_KEY,
+    // The next 2 values are by default configured for Ethereum
+    // Change them if using another chain
+    // See https://github.com/cgewecke/hardhat-gas-reporter#token-and-gaspriceapi-options-example
     token: GAS_REPORTER_TOKEN,
-    gasPrice: REPORTER_GAS_PRICE,
     gasPriceApi: GAS_PRICE_API,
-    showTimeSpent: true,
-    showMethodSig: true,
-    maxMethodDiff: 10,
   },
   typechain: {
     outDir: "./build/typechain",
