@@ -1,4 +1,4 @@
-## Project Name
+## Project README Template
 *short project description here*
 
 #### Table on contents
