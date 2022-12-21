@@ -150,6 +150,12 @@ module.exports = {
     spacing: 2,
     pretty: true,
   },
+  contractSizer: {
+    alphaSort: true,
+    disambiguatePaths: true,
+    strict: true,
+    runOnCompile: true
+  },
   dodoc: {
     include: [],
     runOnCompile: true,
