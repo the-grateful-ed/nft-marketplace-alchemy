@@ -1,13 +1,5 @@
 # Lock
 
-
-
-
-
-
-
-
-
 ## Methods
 
 ### owner
@@ -16,16 +8,11 @@
 function owner() external view returns (address payable)
 ```
 
-
-
-
-
-
 #### Returns
 
-| Name | Type | Description |
-|---|---|---|
-| _0 | address payable | undefined |
+| Name | Type            | Description |
+| ---- | --------------- | ----------- |
+| \_0  | address payable | undefined   |
 
 ### unlockTime
 
@@ -33,29 +20,17 @@ function owner() external view returns (address payable)
 function unlockTime() external view returns (uint256)
 ```
 
-
-
-
-
-
 #### Returns
 
-| Name | Type | Description |
-|---|---|---|
-| _0 | uint256 | undefined |
+| Name | Type    | Description |
+| ---- | ------- | ----------- |
+| \_0  | uint256 | undefined   |
 
 ### withdraw
 
 ```solidity
 function withdraw() external nonpayable
 ```
-
-
-
-
-
-
-
 
 ## Events
 
@@ -65,16 +40,9 @@ function withdraw() external nonpayable
 event Withdrawal(uint256 amount, uint256 when)
 ```
 
-
-
-
-
 #### Parameters
 
-| Name | Type | Description |
-|---|---|---|
-| amount  | uint256 | undefined |
-| when  | uint256 | undefined |
-
-
-
+| Name   | Type    | Description |
+| ------ | ------- | ----------- |
+| amount | uint256 | undefined   |
+| when   | uint256 | undefined   |
